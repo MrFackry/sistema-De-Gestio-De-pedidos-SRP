@@ -5,6 +5,7 @@ public class Producto {
     private String nombre;
     private double preicio;
 
+    /*GettersAndSetters*/
     public String getNombre() {
         return nombre;
     }
@@ -21,6 +22,8 @@ public class Producto {
         this.preicio = preicio;
     }
 
+    /*ToString*/
+    //hace que los datos sean legibles
     @Override
     public String toString() {
         return "Producto{" +

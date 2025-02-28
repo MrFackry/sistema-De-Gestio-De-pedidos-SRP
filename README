@@ -1,0 +1,14 @@
+#PROYECTO DE PRUEBA Y REFUERSO DE CONOCIMIENTOS BASE
+
+este pequeño proyecto de prueba usa:
+#POO
+#principios solid
+#patron Repository
+
+el proyecto consiste en crear un sistemas de gestion de pedidos en el cual se debe de guardar
+el nombre del cliente, la lIsta de productos y el precio total de los productos, respentando el
+prinsipio S de solid y usando el patron Repository
+
+Para lograrlo, se uso el patron Repository y el principio SRP de SOLID.
+
+

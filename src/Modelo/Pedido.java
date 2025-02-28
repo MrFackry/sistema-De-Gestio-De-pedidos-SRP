@@ -8,6 +8,7 @@ public class Pedido {
     private List<Producto> listaProductos;
     private double totalPedidos;
 
+    /*GettersAndSetters*/
     public Pedido() {
         this.listaProductos =  new ArrayList<>();
     }
@@ -36,6 +37,8 @@ public class Pedido {
         this.totalPedidos = totalPedidos;
     }
 
+    /*ToString*/
+    //hace que los datos sean legibles
     @Override
     public String toString() {
         return "PedidoService{" +
@@ -45,7 +48,7 @@ public class Pedido {
                 '}';
     }
 
-
+    /*Guarda los productos en la lista de productos*/
     public void guardarProducto(Producto producto){
         listaProductos.add(producto);
     }

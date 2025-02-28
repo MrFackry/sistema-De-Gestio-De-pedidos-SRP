@@ -12,6 +12,7 @@ public class Main {
     private Pedido pedido;
     private Producto producto;
     private PedidoService pedidoService;
+
     public static void main(String[] args) {
 
     /*inicilizar serivice*/
@@ -26,12 +27,11 @@ public class Main {
         String nombreCliente = scanner.nextLine();
         System.out.println("cuantos productos vas a agregar: ");
 
-        /*guardar pedido*/
-        pedido.setNombreCliente(nombreCliente);
-
 
         int cantidad = scanner.nextInt();
         int contador=0;
+
+        //repetir mientras contador sea menos que cantidad
         while (contador<cantidad){
             /*inicializar producto*/
             Producto producto = new Producto();
@@ -53,6 +53,8 @@ public class Main {
 
             contador++;
         }
+        /*guardar pedido*/
+        pedido.setNombreCliente(nombreCliente);
         pedidoService.guardarPedido(pedido);
         pedidoService.totalPedido(pedido);
         System.out.println("datos guardados: ");
