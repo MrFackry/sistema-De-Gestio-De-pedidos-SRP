@@ -9,10 +9,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    private Pedido pedido;
-    private Producto producto;
-    private PedidoService pedidoService;
-
     public static void main(String[] args) {
 
     /*inicilizar serivice*/
@@ -55,10 +51,11 @@ public class Main {
         }
         /*guardar pedido*/
         pedido.setNombreCliente(nombreCliente);
+
         pedidoService.guardarPedido(pedido);
         pedidoService.totalPedido(pedido);
         System.out.println("datos guardados: ");
-        pedidoService.mostrarBD();
-
+        pedidoService.mostrarPedido();
+        scanner.close();
     }
 }

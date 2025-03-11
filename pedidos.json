@@ -1,0 +1,26 @@
+[
+  {
+    "nombreCliente": "daniel",
+    "listaProductos": [
+      {
+        "nombre": "agua",
+        "preicio": 1000.0
+      }
+    ],
+    "totalPedidos": 1000.0
+  },
+  {
+    "nombreCliente": "adrian",
+    "listaProductos": [
+      {
+        "nombre": "gaseosa",
+        "preicio": 2500.0
+      },
+      {
+        "nombre": "dulce",
+        "preicio": 200.0
+      }
+    ],
+    "totalPedidos": 2700.0
+  }
+]

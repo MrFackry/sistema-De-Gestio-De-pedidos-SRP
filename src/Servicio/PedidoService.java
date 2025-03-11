@@ -31,10 +31,10 @@ public class PedidoService {
     //guardamos un pedido
     public void guardarPedido(Pedido pedido){
         pedido.setTotalPedidos(totalPedido(pedido));
-        pedidoRepository.gurdarPedidos(pedido);
+        pedidoRepository.guardarPedidosJson(pedido);
     }
     //mostramos los datos para revissar si todo esta bien
-    public void mostrarBD(){
-        System.out.println(pedidoRepository.getPedidosBD());
+    public void mostrarPedido(){
+        System.out.println(pedidoRepository.obtenerPedidos());
     }
 }
